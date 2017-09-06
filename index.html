@@ -7,12 +7,22 @@
     <title>Document</title>
 </head>
 <body ng-controller="hCtrl">
-    {{ test }}
-
+    <!-- {{ test }} -->
+<div ng-repeat="card in hearth">
+    
+    <img class="cardImage" ng-src="{{card.img}}" alt="">
+    <span class="name">{{ hearth.name }}</span>
+    <span>{{ card.type }}</span> <br>
+    <span>{{ card.cost }}</span> <br>
+    <span>{{ card.text }}</span> <br>
+    <span>{{ card.img }}</span> <br>
+    <span>{{ card.mechanics.name }}</span>
+    <hr>
+</div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
-    <script src="./app.js"></script>
-    <script src="./hearthTest.js"></script>
-    <script src="./hCtrl.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/hearthTest.js"></script>
+    <script src="./js/hCtrl.js"></script>
 </body>
 </html>
