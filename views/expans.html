@@ -42,10 +42,21 @@
                     <a href="">Show Image<span><img src="" alt="image" height="100" /></span></a>
             </div>
         </section>
-    
-       <section class="deckContain" ng-repeat"card in cards">
-               {{test}}
-                <div><img src="{{card.img}}" alt="{{card.name}}"></div>
+        <!-- <div ng-repeat="card in expansion">
+            
+            <img class="cardImage" ng-src="{{card.img}}" alt="">
+            <span class="name">{{ hearth.name }}</span>
+            <span>{{ card.type }}</span> <br>
+            <span>{{ card.cost }}</span> <br>
+            <span>{{ card.text }}</span> <br>
+            <span>{{ card.img }}</span> <br>
+            <span>{{ card.mechanics.name }}</span>
+            <hr>
+        +</div> -->
+         
+       <section class="deckContain" ng-repeat="card in expansion">
+               
+               <img ng-src="{{card.img}}" alt="{{card.name}}">
     
         
     

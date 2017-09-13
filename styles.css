@@ -42,10 +42,13 @@ input[type=text]{
 }
 .deckContain{
     display: block;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 40vw;
     background-color: #C19150
 }
+
 
 
 
