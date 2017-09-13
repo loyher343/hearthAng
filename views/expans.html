@@ -1,0 +1,54 @@
+
+
+
+
+        <div class="classFilter">
+                
+                Filter by Class <br>
+                <img class="icons" src="" alt="icon classes">
+            </div>
+    
+            <div class="filter">
+                <select>
+                        <option value="">--</option>
+                        <option value="">Knights</option>
+                        <option value="">old gods</option>
+                        <option value="">gadget</option>
+                        <option value="">basic</option>
+
+                </select>
+                <input type="text" placeholder="stuff goes here">
+                <input type="text" placeholder="more stuff goes here">
+                <input type="text" placeholder="other stuff goes here">
+                <input type="text" placeholder="stuff">
+    
+                <label for="cost">cost</label>
+                <select name="cost" id="cost">
+                        <option value="">--</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                   
+            </div>
+            <div class="hover_img">
+                    <a href="">Show Image<span><img src="" alt="image" height="100" /></span></a>
+            </div>
+        </section>
+    
+       <section class="deckContain" ng-repeat"card in cards">
+               {{test}}
+                <div><img src="{{card.img}}" alt="{{card.name}}"></div>
+    
+        
+    
+    
+       </section>
+{{test}}

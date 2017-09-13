@@ -1,6 +1,20 @@
-angular.module('hearthApp', []);
+angular.module('hearthApp', ['ui.router'])
+.config(function ($stateProvider, $urlRouterProvider){
+   // $urlRouterProvider.otherwise('/')
 
-
-
-
-//obj.problems[0].Diabetes[0].medications[0].medicationsClasses[0].className[0].associatedDrug[0].name
+    $stateProvider
+        .state('home',{
+            url: '/',
+            templateUrl: '../views/home.html',
+            controller: 'hCtrl'
+        })
+        .state('expans',{
+            url: '/expansions',
+            templateUrl: '../views/expans.html',
+            controller: 'expansCtrl'
+        })
+        .state('cardInfo',{
+            url: '/cardInfo',
+            templateUrl: '../views/cardInfo.html'
+        })
+})
