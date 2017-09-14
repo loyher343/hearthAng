@@ -6,6 +6,9 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
 
   var deferred = $q.defer();
   $http.get(hearthurl).then(function(data){
+    for(key in data.data){
+      console.log(key)
+    }
     console.log(data.data)
     deferred.resolve(data.data);
   })
