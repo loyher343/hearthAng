@@ -14,7 +14,7 @@ angular.module('hearthApp', ['ui.router'])
             controller: 'expansCtrl'
         })
         .state('cardInfo',{
-            url: '/cardInfo',
+            url: '/cardInfo:id',
             templateUrl: '../views/cardInfo.html'
         })
 })

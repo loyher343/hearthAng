@@ -6,11 +6,14 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
 
   var deferred = $q.defer();
   $http.get(hearthurl).then(function(data){
-    deferred.resolve(data);
+    console.log(data.data)
+    deferred.resolve(data.data);
   })
 
   this.getCards = function(){
+    
     return deferred.promise
+
   }
 
 })
