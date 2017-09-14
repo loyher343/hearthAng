@@ -1,4 +1,4 @@
-angular.module('hearthApp').controller('expansCtrl', function($scope, hearthServ){
+angular.module('hearthApp').controller('basicCtrl', function($scope, hearthServ){
     $scope.test = "tis better to be vile than vile esteem"
 
 

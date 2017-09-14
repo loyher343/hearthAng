@@ -11,18 +11,18 @@ angular.module('hearthApp', ['ui.router'])
         .state('basic',{
             url: '/expansions/:id',
             templateUrl: '../views/expans.html',
-            controller: 'expansCtrl'
+            controller: 'basicCtrl'
         })    
         .state('classic',{
             url: '/expansions/:id',
             templateUrl: '../views/classic.html',
             controller: 'classicCtrl'
         })    
-        .state('expans',{
-            url: '/expansions/:id',
-            templateUrl: '../views/expans.html',
-            controller: 'expansCtrl'
-        })
+        // .state('expans',{
+        //     url: '/expansions/:id',
+        //     templateUrl: '../views/expans.html',
+        //     controller: 'expansCtrl'
+        // })
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
