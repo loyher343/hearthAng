@@ -15,29 +15,29 @@ angular.module('hearthApp').controller('expansCtrl', function($scope, hearthServ
        var basic =data.Basic
       //for(var i = oldGods.length; i >= 0; i--){
         
-      for(var i = 0 ; i < oldGods.length ; i++){
+    //   for(var i = 0 ; i < oldGods.length ; i++){
       
-         
-         console.log(typeof(oldGods[i].img))
-        //  if(oldGods[i].type === "Enchantment"){
-        //      oldGods.splice(i,1)
-           
-        // }
-        // if(oldGods[i].cost == undefined){
-        //      oldGods.splice(i,1)
-        //}
-        if(oldGods[i].artist == undefined){
-            oldGods.splice(i,1)
-        }
-        // // if(oldGods[i].img == undefined){
-        // //     oldGods.splice(i,1)
-        // // }
-        // if(oldGods[i].imgGold == undefined){
-        //     oldGods.splice(i,1)
-        // }
-      }
         
-    $scope.expansion = oldGods;
+    //     // console.log(typeof(oldGods[i].img))
+    //     //  if(oldGods[i].type === "Enchantment"){
+    //     //      oldGods.splice(i,1)
+           
+    //     // }
+    //     // if(oldGods[i].cost == undefined){
+    //     //      oldGods.splice(i,1)
+    //     //}
+    //     if(oldGods[i].artist == undefined){
+    //         oldGods.splice(i,1)
+    //     }
+    //     // // if(oldGods[i].img == undefined){
+    //     // //     oldGods.splice(i,1)
+    //     // // }
+    //     // if(oldGods[i].imgGold == undefined){
+    //     //     oldGods.splice(i,1)
+    //     // }
+    //   }
+        
+    $scope.expansion = basic;
     console.log($scope.expansion)
     //   delete $scope.expansion.Debug
     //   delete $scope.expansion.Credits

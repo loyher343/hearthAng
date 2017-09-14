@@ -1,7 +1,6 @@
 angular
 .module("hearthApp")
-.controller("cardInfoCtrl", function($scope, $stateParams, heartServ) {
-  
+.controller("cardInfoCtrl", function($scope, $stateParams, hearthServ) {
  
-  
+
 });

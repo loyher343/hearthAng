@@ -1,6 +1,6 @@
 angular.module('hearthApp', ['ui.router'])
 .config(function ($stateProvider, $urlRouterProvider){
-   // $urlRouterProvider.otherwise('/')
+    $urlRouterProvider.otherwise('/')
 
     $stateProvider
         .state('home',{
@@ -9,12 +9,13 @@ angular.module('hearthApp', ['ui.router'])
             controller: 'hCtrl'
         })
         .state('expans',{
-            url: '/expansions',
+            url: '/expansions/:id',
             templateUrl: '../views/expans.html',
             controller: 'expansCtrl'
         })
         .state('cardInfo',{
-            url: '/cardInfo:id',
-            templateUrl: '../views/cardInfo.html'
+            url: '/cardInfo/:id',
+            templateUrl: '../views/cardInfo.html',
+            controller: 'expansCtrl'
         })
 })
