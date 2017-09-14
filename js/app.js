@@ -8,6 +8,16 @@ angular.module('hearthApp', ['ui.router'])
             templateUrl: '../views/home.html',
             controller: 'hCtrl'
         })
+        .state('basic',{
+            url: '/expansions/:id',
+            templateUrl: '../views/expans.html',
+            controller: 'expansCtrl'
+        })    
+        .state('classic',{
+            url: '/expansions/:id',
+            templateUrl: '../views/classic.html',
+            controller: 'classicCtrl'
+        })    
         .state('expans',{
             url: '/expansions/:id',
             templateUrl: '../views/expans.html',
@@ -16,6 +26,6 @@ angular.module('hearthApp', ['ui.router'])
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
-            controller: 'expansCtrl'
+            controller: 'cardInfoCtrl'
         })
 })

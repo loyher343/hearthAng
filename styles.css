@@ -1,16 +1,15 @@
 body{
     background-color: #91908E
 }
+nav{
+    display: inline-block;
+}
 .hsymbol{
     height: 100px;
 }
 
 
-.expansions{
-    width: 100%;
-
-}
-.expansions img{
+section img{
     height: 300px;
 }
 

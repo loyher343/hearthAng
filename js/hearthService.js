@@ -23,5 +23,9 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
   this.getExp = function(){
     return deferred.promise
   }
+
+  this.cardInfo = function(){
+    return deferred.promise
+  }
 })
 

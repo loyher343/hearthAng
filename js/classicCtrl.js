@@ -1,4 +1,4 @@
-angular.module('hearthApp').controller('expansCtrl', function($scope, hearthServ){
+angular.module('hearthApp').controller('classicCtrl', function($scope, hearthServ){
     $scope.test = "tis better to be vile than vile esteem"
 
 
@@ -11,7 +11,7 @@ angular.module('hearthApp').controller('expansCtrl', function($scope, hearthServ
         console.log(data)
     
     
-        $scope.expansion = data.data.Basic
+        $scope.expansion = data.data.Classic
         console.log($scope.expansion)
       //for(var i = oldGods.length; i >= 0; i--){
         
@@ -50,23 +50,3 @@ angular.module('hearthApp').controller('expansCtrl', function($scope, hearthServ
    }) 
   
 })
-
-
-var expansions = [
-    "Basic",
-    "Blackrock Mountain",
-    "Classic",
-    "Goblins vs Gnomes",
-    "Hall of Fame",
-    "Hero Skins",
-    "Journey to Un'Goro",
-    "Knights of the Frozen Throne",
-    "Mean Streets of Gadgtzan",
-    "Naxxramas",
-    "One Night in Karazhan",
-    "The Grand Tournament",
-    "The League of Explorers",
-    "Whispers of the Old Gods"
-]
-
-
