@@ -6,9 +6,9 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
 
   var deferred = $q.defer(); 
   $http.get(hearthurl).then(function(data){
-    console.log(data.data)
+     console.log(data.data)
     for(key in data.data){
-      console.log(key)
+      // console.log(key)
      
     }
     //console.log(data.data)
@@ -24,7 +24,7 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
     return deferred.promise
   }
 
-  this.cardInfo = function(){
+  this.cardInfo = function(id){
     return deferred.promise
   }
 })
