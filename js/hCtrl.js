@@ -17,7 +17,7 @@ angular.module('hearthApp').controller('hCtrl', function($scope, hearthServ){
     $scope.LoE = data.data["The League of Explorers"]
     $scope.oldGods = data.data["Whispers of the Old Gods"]
     $scope.karazhan = data.data["One Night in Karazhan"]
-    // $scope. = data.data.
+    $scope.gadgetzan = data.data["Mean Streets of Gadgetzan"]
     // $scope. = data.data.
     // $scope. = data.data.
 

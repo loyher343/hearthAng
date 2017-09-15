@@ -57,7 +57,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/karazhan.html',
             controller: 'karazhanCtrl' 
-        })                   
+        })
+        .state('gadgetzan',{
+            url: '/expansions/:id',
+            templateUrl: '../views/gadgetzan.html',
+            controller: 'gadgetzanCtrl' 
+        })                       
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
