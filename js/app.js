@@ -28,6 +28,11 @@ angular.module('hearthApp', ['ui.router'])
             templateUrl: '../views/naxx.html',
             controller: 'naxxCtrl'
         })
+        .state('goblin',{
+            url: '/expansions/:id',
+            templateUrl: '../views/goblins.html',
+            controller: 'goblinCtrl'
+        })    
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',

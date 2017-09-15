@@ -11,7 +11,7 @@ angular.module('hearthApp').controller('hCtrl', function($scope, hearthServ){
     $scope.classic = data.data.Classic
     $scope.naxx = data.data.Naxxramas
     $scope.fame = data.data["Hall of Fame"]
-    // $scope. = data.data.
+    $scope.goblin = data.data["Goblins vs Gnomes"]
     // $scope. = data.data.
     // $scope. = data.data.
     // $scope. = data.data.
