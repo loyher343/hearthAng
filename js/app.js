@@ -52,7 +52,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/oldGods.html',
             controller: 'oldGodsCtrl' 
-        })                      
+        })   
+        .state('karazhan',{
+            url: '/expansions/:id',
+            templateUrl: '../views/karazhan.html',
+            controller: 'karazhanCtrl' 
+        })                   
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
