@@ -19,9 +19,14 @@ angular.module('hearthApp', ['ui.router'])
             controller: 'classicCtrl'
         })    
         .state('fame',{
-            url: '/expansions/:id',
+            url: '/expansions/:iddd',
             templateUrl: '../views/fame.html',
             controller: 'fameCtrl'
+        })
+        .state('naxx',{
+            url: '/expansions/:id',
+            templateUrl: '../views/naxx.html',
+            controller: 'naxxCtrl'
         })
         .state('cardInfo',{
             url: '/cardInfo/:id',

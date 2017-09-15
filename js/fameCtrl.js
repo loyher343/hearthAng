@@ -11,9 +11,9 @@ angular.module('hearthApp').controller('fameCtrl', function($scope, hearthServ){
     
     
     var fame = "Hall of Fame"
-        $scope.expansion = data.data.fame
+        $scope.expansion = data.data["Hall of Fame"]
         
-    condole.log($scope.expansion)
+    console.log($scope.expansion)
     
     
    
