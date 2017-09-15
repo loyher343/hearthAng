@@ -37,7 +37,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/blackrock.html',
             controller: 'blackRockCtrl'
-        })        
+        })
+        .state('grandT',{
+            url: '/expansions/:id',
+            templateUrl: '../views/grand.html',
+            controller: 'grandTCtrl' 
+        })       
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
