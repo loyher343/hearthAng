@@ -47,7 +47,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/LoE.html',
             controller: 'LoECtrl' 
-        })           
+        })
+        .state('oldGods',{
+            url: '/expansions/:id',
+            templateUrl: '../views/oldGods.html',
+            controller: 'oldGodsCtrl' 
+        })                      
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',

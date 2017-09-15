@@ -15,7 +15,7 @@ angular.module('hearthApp').controller('hCtrl', function($scope, hearthServ){
     $scope.blackRock = data.data["Blackrock Mountain"]
     $scope.grandT = data.data["The Grand Tournament"]
     $scope.LoE = data.data["The League of Explorers"]
-    // $scope. = data.data.
+    $scope.oldGods = data.data["Whispers of the Old Gods"]
     // $scope. = data.data.
     // $scope. = data.data.
     // $scope. = data.data.
