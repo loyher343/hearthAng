@@ -11,7 +11,7 @@ angular.module('hearthApp').controller('naxxCtrl', function($scope, hearthServ){
         
     
     
-        $scope.naxx = data.data.Naxxramas
+        $scope.expansion = data.data.Naxxramas
        
     
         
