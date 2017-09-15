@@ -19,7 +19,7 @@ angular.module('hearthApp').controller('hCtrl', function($scope, hearthServ){
     $scope.karazhan = data.data["One Night in Karazhan"]
     $scope.gadgetzan = data.data["Mean Streets of Gadgetzan"]
     $scope.unGoro = data.data["Journey to Un'Goro"]
-    // $scope. = data.data.
+    $scope.frozenThrone = data.data["Knights of the Frozen Throne"]
 
           //console.log($scope.expansion)
     })
