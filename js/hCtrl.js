@@ -14,6 +14,11 @@ angular.module('hearthApp').controller('hCtrl', function($scope, hearthServ){
     $scope.goblin = data.data["Goblins vs Gnomes"]
     $scope.blackRock = data.data["Blackrock Mountain"]
     $scope.grandT = data.data["The Grand Tournament"]
+    $scope.LoE = data.data["The League of Explorers"]
+    // $scope. = data.data.
+    // $scope. = data.data.
+    // $scope. = data.data.
+    // $scope. = data.data.
     // $scope. = data.data.
 
           //console.log($scope.expansion)

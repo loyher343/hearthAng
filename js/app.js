@@ -42,7 +42,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/grand.html',
             controller: 'grandTCtrl' 
-        })       
+        })
+        .state('LoE',{
+            url: '/expansions/:id',
+            templateUrl: '../views/LoE.html',
+            controller: 'LoECtrl' 
+        })           
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
