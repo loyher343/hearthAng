@@ -32,7 +32,12 @@ angular.module('hearthApp', ['ui.router'])
             url: '/expansions/:id',
             templateUrl: '../views/goblins.html',
             controller: 'goblinCtrl'
-        })    
+        })
+        .state('blackRock',{
+            url: '/expansions/:id',
+            templateUrl: '../views/blackrock.html',
+            controller: 'blackRockCtrl'
+        })        
         .state('cardInfo',{
             url: '/cardInfo/:id',
             templateUrl: '../views/cardInfo.html',
