@@ -14,38 +14,22 @@
                 <input type="text" ng-model=" hearthFilter.name" placeholder="name">
 
               </form>
-              <div ng-model="hearthFilter.cost" class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1"> 1
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="2"> 2
-                        </label>
-                      </div>
-                      <div class="form-check form-check-inline disabled">
-                        <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="3" disabled> 3
-                        </label>
-                      </div>
+              <label >Cost</label>
               <select ng-model="hearthFilter.cost" class="form-control form-control-sm">
-                        <option value="1">1</option>
+                        <option value="0">0 Mana</option>
+                        <option value="1">1 Mana</option>
+                        <option value="2">2 Mana</option>
+                        <option value="3">3 Mana</option>
+                        <option value="4">4 Mana</option>
+                        <option value="5">5 Mana</option>
+                        <option value="6">6 Mana</option>
+                        <option value="7">7 Mana</option>
+                        <option value="8">8 Mana</option>
+                        <option value="9">9 Mana</option>
+                        <option value="10">10 Mana</option>
+
                       </select>
-               <select size="1" name="cost" id="cost" ng-model="hearthFilter.cost">
-                        
-                        <option selected value="0">0</option>
-                       <option value="1">1</option>
-                       <option value="2">2</option>
-                       <option value="3">3</option>
-                       <option value="4">4</option>
-                       <option value="5">5</option>
-                       <option value="6">6</option>
-                       <option value="7">7</option>
-                       <option value="8">8</option>
-                       <option value="9">9</option>
-                       <option value="10">10</option>
-               </select>
+               
                 <!-- <label for="cost">cost</label>
                 <div>
                 <select selected=0 name="cost" ng-model="hearthFilter.cost" id="cost">
@@ -63,10 +47,7 @@
                         <option>10</option>
                     </select>
                  </div> -->
-                 <div class="glowbox">
-                         
-                
-                </div>  
+                 
                 </div>
         </div>
             

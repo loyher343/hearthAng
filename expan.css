@@ -4,17 +4,17 @@
 }
 
 .filter{
-    border-radius: 5px;
-    background-color: #B15018;
-    
-    margin: 0 5%;
-    border-style: ridge;
-    border-width: 2px;
+   
 }
 
 
-
+option{
+    font-size:2em;
+}
 .carddisplay{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     height: 100%;
     width: 81vw;
     background-image: url("./img/noisy-texture-100x100-o16-d22-c-e0d07e-t0.png");
