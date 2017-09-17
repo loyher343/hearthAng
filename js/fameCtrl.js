@@ -8,18 +8,26 @@ angular.module('hearthApp').controller('fameCtrl', function($scope, hearthServ){
     var promise = hearthServ.getCards();
 
    promise.then(function(data){
-    
-    
-    var fame = "Hall of Fame"
-        $scope.expansion = data.data["Hall of Fame"]
+    var set = data.data["Hall of Fame"]
+    console.log(set)
+    for(var i = 0; i<set.length; i++){
+         if(set[i].imgGold===undefined){
+             set.splice(i,1)
+         }
+         if(set[i].img== undefined){
+             set.splice(i,1)
+         }
+         if(set[i].Enchantment!=undefined){
+             set.splice(i,1)
+         }
+         if(set[i].cost===undefined){
+             set.splice(i,1)
+         }
         
-    console.log($scope.expansion)
-    
-    
-   
-          
-       
-   }) 
+ 
+     }console.log(set)
+     $scope.expansion = set
+    })
   
 })
 

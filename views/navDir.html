@@ -1,0 +1,45 @@
+<nav class="navbar fixed-top navbar-light bg-light">
+        
+        
+        
+        
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a ui-sref="basic({ id:basic })">Basic</a>
+            <a ui-sref="classic({ id:classic })">Classic</a>
+            <a ui-sref="fame({ iddd:fame })">Hall of Fame</a>
+            <a ui-sref="naxx({ id:naxx })">Naxxramas</a>
+            <a ui-sref="goblin({ id:goblin })">Goblins vs Gnomes</a>
+            <a ui-sref="blackRock({ id:blackRock })">Blackrock Mountain</a>
+            <a ui-sref="grandT({ id:grandT })">The Grand Tournament</a>
+            <a ui-sref="LoE({ id:LoE })">The League of Explorers</a>
+            <a ui-sref="oldGods({ id:oldGods })">Whispers of the Old Gods</a>
+            <a ui-sref="karazhan({ id:karazhan })">One Night in Karazhan</a>
+            <a ui-sref="gadgetzan({ id:gadgetzan })"</a>
+            <a ui-sref="unGoro({ id:unGoro })">Journey to Un'Goro</a>
+            <a ui-sref="frozenThrone({ id:frozenThrone })">Knights of the Frozen Throne</a>
+        </div>
+        
+        <div id="main">
+            
+            
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="hsymbol" src="/img/hearthSymb.png" alt="logo"> </span>
+        </div>
+        
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                document.body.style.backgroundColor = "white";
+            }
+            </script>
+    <a class="navbar-brand" style"font-family:myfont;" ui-sref="home"><p class="title"> Title thing</p></a>
+    &nbsp&nbsp&nbsp&nbsp
+    </nav>

@@ -4,12 +4,53 @@
 }
 
 .filter{
-   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 139px;
+    width: 90%;
+    background-color: rgba(153, 130, 0, .45);
+    margin: 0 5%;
+    border:6px ridge;
+    border-radius: 3px;
+    border-color: #CA9E47;
+  
+    
 }
-
+input[type=text]{
+    width: 500px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
 
 option{
     font-size:2em;
+}
+.select-style {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    -webkit-appearance: menulist;
+    
+    
+}
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+   
+}
+
+.select-style select:focus {
+    outline: none;
 }
 .carddisplay{
     display: flex;
@@ -22,7 +63,7 @@ option{
     border-width:10px;  
     border-left-style: ridge;
     border-right-style: ridge;
-    border-color:#A16B2C
+    border-color:#A16B2C;
 }
 .cardContain{
    

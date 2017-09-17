@@ -14,15 +14,16 @@ angular.module('hearthApp').controller('grandTCtrl', function($scope, hearthServ
             if(grand[i].imgGold===undefined){
                 grand.splice(i,1)
             }
-            if(grand[i].img===undefined){
+            if(grand[i].img== undefined){
                 grand.splice(i,1)
             }
-            if(grand[i].Enchantment===true){
+            if(grand[i].Enchantment!=undefined){
                 grand.splice(i,1)
             }
-            // if(grand[i].cost===undefined){
-            //     grand.splice(i,1)
-            // }
+            if(grand[i].cost===undefined){
+                grand.splice(i,1)
+            }
+           
     
         }console.log(grand)
         $scope.expansion = grand
