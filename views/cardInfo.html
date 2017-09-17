@@ -5,7 +5,7 @@
 
 
 <div class="card">
-<h1 class="cardName">{{thiscard.name}}</h1>
+<h1 class="cardName">{{thiscard.set}} {{thiscard.name}}</h1>
 
 {{test}}
 <div class="card-container">
@@ -29,8 +29,10 @@
     <section class="cardStuff">
         
         <div>Rarity: {{thiscard.rarity}}</div>
-        <div><q>{{thiscard.flavor}}</q></div>
-        <div>{{thiscard.artist}}</div>
+        <div>Type:  {{thiscard.type}}</div>
+        <div>PlayerClass: {{thiscard.playerClass}}</div>
+        <div><q> {{thiscard.flavor}}</q></div>
+        <div class="artist">Artist - {{thiscard.artist}}</div>
     </section>
 </div>
 </div>

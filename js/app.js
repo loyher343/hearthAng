@@ -33,15 +33,15 @@ angular.module('hearthApp', ['ui.router'])
             templateUrl: '../views/goblins.html',
             controller: 'goblinCtrl'
         })
+                .state('grandT',{
+                    url: '/expansions/:id',
+                    templateUrl: '../views/grand.html',
+                    controller: 'grandTCtrl' 
+                })
         .state('blackRock',{
             url: '/expansions/:id',
             templateUrl: '../views/blackrock.html',
             controller: 'blackRockCtrl'
-        })
-        .state('grandT',{
-            url: '/expansions/:id',
-            templateUrl: '../views/grand.html',
-            controller: 'grandTCtrl' 
         })
         .state('LoE',{
             url: '/expansions/:id',
