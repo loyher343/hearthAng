@@ -1,29 +1,112 @@
-<section>
-<h1>Welcome</h1>
+<section class="home">
+<h1>Choose a Set</h1>
 {{test}} 
 
+<div class="tables" >
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            
+            <th>Basic</td>
+            <th>Classic</th>
+            <th>Hall of Fame</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr>
+            
+            <td><a  ui-sref="basic({ id:basic })"><img  src="../img/basic.png" alt=""> </a></td>
+            <td><a ui-sref="classic({ id:classic })"><img src="../img/Classic.png" alt=""> </a></td>
+            <td><a ui-sref="fame({ iddd:fame })"><img src="../img/Hall-of-fame.png" alt=""> </a></td>
+          </tr>
+        
+        </tbody>
+</table>
 
 
 
-<section class="cardback">
-    Basic<a ui-sref="basic({ id:basic })"><img src="../img/basic.png" alt=""> </a>
-    Clasic<a ui-sref="classic({ id:classic })"><img src="../img/Classic.png" alt=""> </a>
-    Hall of Fame<a ui-sref="fame({ iddd:fame })"><img src="../img/Hall-of-fame.png" alt=""> </a>
-    Naxxramas<a ui-sref="naxx({ id:naxx })"><img src="../img/naxxramas.png" alt=""> </a>
-    Goblins vs Gnomes<a ui-sref="goblin({ id:goblin })"><img src="../img/Card_Back_Goblin.png" alt=""> </a>
-    Blackrock Mountain<a ui-sref="blackRock({ id:blackRock })"><img src="../img/Card_Back_MoltonCore.png" alt=""> </a>
-    The Grand Tournament<a ui-sref="grandT({ id:grandT })"><img src="../img/the-grand.png" alt=""> </a>
-    The League of Explorers<a ui-sref="LoE({ id:LoE })"><img src="../img/Card_Back_LOE1.png" alt=""> </a>
-    Whispers of the Old Gods<a ui-sref="oldGods({ id:oldGods })"><img src="../img/card-back-eye-of-cthun.png" alt=""> </a>
-    One Night in Karazhan<a ui-sref="karazhan({ id:karazhan })"><img src="../img/karazhan.png" alt=""> </a>
-    Mean Streets of Gadgetzan<a ui-sref="gadgetzan({ id:gadgetzan })"><img src="../img/mean-streets.png" alt=""> </a>
-    Journey to Un'Goro<a ui-sref="unGoro({ id:unGoro })"><img src="../img/journey_to_un_goro.png" alt=""> </a>
-    Knights of the Frozen Throne<a ui-sref="frozenThrone({ id:frozenThrone })"><img src="../img/Knights-frozen.png" alt=""> </a>
-       
-    
+<table class="table table-bordered">
+    <thead>
+        <tr>
+                      
+            <th>Naxxramas</th>
+            <th>Goblins vs Gnomes</th>
+            <th>Blackrock Mountain</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+                      
+            <td><a ui-sref="naxx({ id:naxx })"><img src="../img/naxxramas.png" alt=""> </a></td>
+            <td><a ui-sref="goblin({ id:goblin })"><img src="../img/Card_Back_Goblin.png" alt=""> </a></td>
+            <td><a ui-sref="blackRock({ id:blackRock })"><img src="../img/Card_Back_MoltonCore.png" alt=""> </a></td>
+        </tr>
+                  
+    </tbody>
+</table>
+"table table-hover"
+<table class="table table-bordered">
+    <thead>
+        <tr>
+                          
+            <th>The Grand Tournament</th>
+            <th>The League of Explorers</th>
+            <th>Whispers of the Old Gods</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+                          
+            <td><a ui-sref="grandT({ id:grandT })"><img src="../img/the-grand.png" alt=""> </a></td>
+            <td><a ui-sref="LoE({ id:LoE })"><img src="../img/Card_Back_LOE1.png" alt=""> </a></td>
+            <td><a ui-sref="oldGods({ id:oldGods })"><img src="../img/card-back-eye-of-cthun.png" alt=""> </a></td>
+        </tr>
+                      
+    </tbody>
+</table>
+
+<table class="table table-bordered">
+        <thead>
+            <tr>
+                              
+                <th>One Night in Karazhan</th>
+                <th>Mean Streets of Gadgetzan</th>
+                <th>Journey to Un'Goro</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                              
+                <td><a ui-sref="karazhan({ id:karazhan })"><img src="../img/karazhan.png" alt=""> </a></td>
+                <td><a ui-sref="gadgetzan({ id:gadgetzan })"><img src="../img/mean-streets.png" alt=""> </a></td>
+                <td><a ui-sref="unGoro({ id:unGoro })"><img src="../img/journey_to_un_goro.png" alt=""> </a></td>
+            </tr>
+                          
+        </tbody>
+    </table>
+
+    <table class="table table-bordered">
+            <thead>
+                <tr>
+                                  
+                    <th>Knights of the Frozen Throne</th>
+                   
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                                  
+                    <td><a ui-sref="frozenThrone({ id:frozenThrone })"><img src="../img/Knights-frozen.png" alt=""> </a></td>
+                   
+                </tr>
+                              
+            </tbody>
+        </table>    
+</div>
 
 
-</section>
 
 
 

@@ -18,7 +18,7 @@ angular
                         console.log("HEY")
                         console.log(stuff[key][i])
                         
-                         return $scope.thiscard = stuff[key][i]
+                        return $scope.thiscard = stuff[key][i]
                           
                     
                     }

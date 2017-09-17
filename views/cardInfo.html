@@ -1,10 +1,37 @@
-<h1>Cards</h1>
+
+
+
+
+
+
+<div class="card">
+<h1 class="cardName">{{thiscard.name}}</h1>
 
 {{test}}
 <div class="card-container">
-    <div><img src="{{thiscard.imgGold}}" alt=""></div>
-    <div><img src="{{thiscard.img}}" alt=""></div>
-    <div>{{thiscard.rarity}}</div>
-    <div>{{thiscard.flavor}}</div>
+        <div id="f1_container">
+                <div id="f1_card" class="shadow">
+                  <div class="front face">
+                    <img src="{{thiscard.img}}" />
+                  </div>
+                  <div class="back face center">
+                        <img src="{{thiscard.imgGold}}" alt="NO image golden found for {{thiscard.name}}">
+                  </div>
+                </div>
+                </div>
 
+        <!-- <figure >
+                <img src="{{thiscard.img}}">
+                <figcaption>
+                    <img src="{{thiscard.imgGold}}" alt="">
+                </figcaption>
+            </figure> -->
+    <section class="cardStuff">
+        
+        <div>Rarity: {{thiscard.rarity}}</div>
+        <div><q>{{thiscard.flavor}}</q></div>
+        <div>{{thiscard.artist}}</div>
+    </section>
 </div>
+</div>
+<!-- imghvr-shutter-in-out-horiz -->

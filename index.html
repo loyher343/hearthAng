@@ -6,21 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./cardInfo.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./expan.css">
+    <link rel="stylesheet" href="./sideNave.css">
+    <link href="https://fonts.googleapis.com/css?family=Ceviche+One" rel="stylesheet">
 </head>
-<body >
-
+<body ng-controller="hCtrl">
+        <nav class="navbar fixed-top navbar-light bg-light">
+            
+            
+            
+            
+            
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a ui-sref="basic({ id:basic })">Basic</a>
+                <a ui-sref="classic({ id:classic })">Classic</a>
+                <a ui-sref="fame({ iddd:fame })">Hall of Fame</a>
+                <a ui-sref="naxx({ id:naxx })">Naxxramas</a>
+                <a ui-sref="goblin({ id:goblin })">Goblins vs Gnomes</a>
+                <a ui-sref="blackRock({ id:blackRock })">Blackrock Mountain</a>
+                <a ui-sref="grandT({ id:grandT })">The Grand Tournament</a>
+                <a ui-sref="LoE({ id:LoE })">The League of Explorers</a>
+                <a ui-sref="oldGods({ id:oldGods })">Whispers of the Old Gods</a>
+                <a ui-sref="karazhan({ id:karazhan })">One Night in Karazhan</a>
+                <a ui-sref="gadgetzan({ id:gadgetzan })"</a>
+                <a ui-sref="unGoro({ id:unGoro })">Journey to Un'Goro</a>
+                <a ui-sref="frozenThrone({ id:frozenThrone })">Knights of the Frozen Throne</a>
+            </div>
+            
+            <div id="main">
+                
+                
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="hsymbol" src="/img/hearthSymb.png" alt="logo"> </span>
+            </div>
+            
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "250px";
+                    document.getElementById("main").style.marginLeft = "250px";
+                    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                    document.getElementById("main").style.marginLeft= "0";
+                    document.body.style.backgroundColor = "white";
+                }
+                </script>
+        <a class="navbar-brand" style"font-family:myfont;" ui-sref="home"><p class="title"> Title thing</p></a>
+        &nbsp&nbsp&nbsp&nbsp
+        </nav>
+        
+        
+        
    
     <header>
            
-        <nav>
-                
-            <ul>
-               <li><a ui-sref="home"><img class="hsymbol" src="/img/hearthSymb.png" alt="logo" /></a></li>   <!--talks to app.routes -->
-              <!-- <li><a ui-sref="expans"> Expansion</a></li> -->
-              <li><img src="../img/Hearthstone-logo-medium.png" alt="logo"></li>
-               
-            </ul>
-        </nav>
+      
     </header>
         
 
@@ -44,6 +88,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <script src="./js/app.js"></script>
     <script src="./js/hearthService.js"></script>
     <script src="./js/hCtrl.js"></script>
@@ -59,7 +107,7 @@
     <script src="./js/gadgetzan.js"></script>
     <script src="./js/unGoro.js"></script>
     <script src="./js/frozenThrone.js"></script>
-   
+   <script src="./js/flip.js"></script>
     <script src="./js/cardInfoCtrl.js"></script>
     <script src="./js/hearthDir.js"></script>
     <script src="./js/classicCtrl.js"></script>
