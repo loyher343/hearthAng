@@ -5,7 +5,7 @@ angular.module('hearthApp', ['ui.router'])
     $stateProvider
         .state('home',{
             url: '/',
-            templateUrl: '../views/home.html',
+            templateUrl: '/views/home.html',
             controller: 'hCtrl'
         })
         .state('basic',{
