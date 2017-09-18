@@ -58,7 +58,7 @@ option{
     justify-content: space-evenly;
     height: 100%;
     width: 81vw;
-    background-image: url("./img/noisy-texture-100x100-o16-d22-c-e0d07e-t0.png");
+    background-image: url("img/noisy-texture-100x100-o16-d22-c-e0d07e-t0.png");
     margin: 0 10%;
     border-width:10px;  
     border-left-style: ridge;
