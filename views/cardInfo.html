@@ -1,39 +1,30 @@
 <nav-Dir></nav-Dir>
 
-
-
-
-
 <div class="card">
-<h1 class="cardName">{{thiscard.set}} {{thiscard.name}}</h1>
 
-{{test}}
-<div class="card-container">
+    <h1 class="cardName">{{thiscard.set}} {{thiscard.name}}</h1>
+
+<!-- {{test}} -->
+    <div class="card-container">
         <div id="f1_container">
-                <div id="f1_card" class="shadow">
-                  <div class="front face">
+            <div id="f1_card" class="shadow">
+                <div class="front face">
                     <img src="{{thiscard.img}}" />
-                  </div>
-                  <div class="back face center">
-                        <img src="{{thiscard.imgGold}}" alt="NO image golden found for {{thiscard.name}}">
-                  </div>
                 </div>
+                <div class="back face center">
+                    <img src="{{thiscard.imgGold}}" alt="NO image golden found for {{thiscard.name}}">
                 </div>
+            </div>
+        </div>
 
-        <!-- <figure >
-                <img src="{{thiscard.img}}">
-                <figcaption>
-                    <img src="{{thiscard.imgGold}}" alt="">
-                </figcaption>
-            </figure> -->
-    <section class="cardStuff">
-        
-        <div>Rarity: {{thiscard.rarity}}</div>
-        <div>Type:  {{thiscard.type}}</div>
-        <div>PlayerClass: {{thiscard.playerClass}}</div>
-        <div><q> {{thiscard.flavor}}</q></div>
-        <div>Artist - {{thiscard.artist}}</div>
-    </section>
-</div>
-</div>
-<!-- imghvr-shutter-in-out-horiz -->
+            
+        <section class="cardStuff">
+            
+            <div>Rarity: {{thiscard.rarity}}</div>
+            <div>Type:  {{thiscard.type}}</div>
+            <div>PlayerClass: {{thiscard.playerClass}}</div><br>
+            <div>{{thiscard.flavor}}</div><br>
+            <div>Artist - {{thiscard.artist}}</div>
+        </section>
+    </div>
+</div

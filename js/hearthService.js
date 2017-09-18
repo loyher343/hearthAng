@@ -5,7 +5,7 @@ angular.module("hearthApp").service('hearthServ', function($http,$q){
   var hearthurl = '../response.json'
 
   var deferred = $q.defer(); 
-  $http.get(hearthurl).then(function(data){
+  $http.get(api+apiKey).then(function(data){
      console.log(data.data)
     for(key in data.data){
       // console.log(key)

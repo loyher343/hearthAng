@@ -18,11 +18,6 @@ angular.module('hearthApp', ['ui.router'])
             templateUrl: '../views/classic.html',
             controller: 'classicCtrl'
         })    
-        .state('fame',{
-            url: '/expansions/:iddd',
-            templateUrl: '../views/fame.html',
-            controller: 'fameCtrl'
-        })
         .state('naxx',{
             url: '/expansions/:id',
             templateUrl: '../views/naxx.html',
@@ -33,15 +28,20 @@ angular.module('hearthApp', ['ui.router'])
             templateUrl: '../views/goblins.html',
             controller: 'goblinCtrl'
         })
-                .state('grandT',{
-                    url: '/expansions/:id',
-                    templateUrl: '../views/grand.html',
-                    controller: 'grandTCtrl' 
-                })
+        .state('grandT',{
+            url: '/expansions/:id',
+            templateUrl: '../views/grand.html',
+            controller: 'grandTCtrl' 
+        })
         .state('blackRock',{
             url: '/expansions/:id',
             templateUrl: '../views/blackrock.html',
             controller: 'blackRockCtrl'
+        })
+        .state('fame',{
+            url: '/expansions/:iddd',
+            templateUrl: '../views/fame.html',
+            controller: 'fameCtrl'
         })
         .state('LoE',{
             url: '/expansions/:id',
