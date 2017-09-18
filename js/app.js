@@ -10,72 +10,72 @@ angular.module('hearthApp', ['ui.router'])
         })
         .state('basic',{
             url: '/expansions/:id',
-            templateUrl: '../views/basic.html',
+            templateUrl: 'views/basic.html',
             controller: 'basicCtrl'
         })    
         .state('classic',{
             url: '/expansions/:id',
-            templateUrl: '../views/classic.html',
+            templateUrl: 'views/classic.html',
             controller: 'classicCtrl'
         })    
         .state('naxx',{
             url: '/expansions/:id',
-            templateUrl: '../views/naxx.html',
+            templateUrl: 'views/naxx.html',
             controller: 'naxxCtrl'
         })
         .state('goblin',{
             url: '/expansions/:id',
-            templateUrl: '../views/goblins.html',
+            templateUrl: 'views/goblins.html',
             controller: 'goblinCtrl'
         })
         .state('grandT',{
             url: '/expansions/:id',
-            templateUrl: '../views/grand.html',
+            templateUrl: 'views/grand.html',
             controller: 'grandTCtrl' 
         })
         .state('blackRock',{
             url: '/expansions/:id',
-            templateUrl: '../views/blackrock.html',
+            templateUrl: 'views/blackrock.html',
             controller: 'blackRockCtrl'
         })
         .state('fame',{
             url: '/expansions/:iddd',
-            templateUrl: '../views/fame.html',
+            templateUrl: 'views/fame.html',
             controller: 'fameCtrl'
         })
         .state('LoE',{
             url: '/expansions/:id',
-            templateUrl: '../views/LoE.html',
+            templateUrl: 'views/LoE.html',
             controller: 'LoECtrl' 
         })
         .state('oldGods',{
             url: '/expansions/:id',
-            templateUrl: '../views/oldGods.html',
+            templateUrl: 'views/oldGods.html',
             controller: 'oldGodsCtrl' 
         })   
         .state('karazhan',{
             url: '/expansions/:id',
-            templateUrl: '../views/karazhan.html',
+            templateUrl: 'views/karazhan.html',
             controller: 'karazhanCtrl' 
         })
         .state('gadgetzan',{
             url: '/expansions/:id',
-            templateUrl: '../views/gadgetzan.html',
+            templateUrl: 'views/gadgetzan.html',
             controller: 'gadgetzanCtrl' 
         })
         .state('unGoro',{
             url: '/expansions/:id',
-            templateUrl: '../views/unGoro.html',
+            templateUrl: 'views/unGoro.html',
             controller: 'unGoroCtrl' 
         })
         .state('frozenThrone',{
             url: '/expansions/:id',
-            templateUrl: '../views/frozenThrone.html',
+            templateUrl: 'views/frozenThrone.html',
             controller: 'frozenThroneCtrl' 
         })                             
         .state('cardInfo',{
             url: '/cardInfo/:id',
-            templateUrl: '../views/cardInfo.html',
+            templateUrl: 'views/cardInfo.html',
             controller: 'cardInfoCtrl'
         })
 })
