@@ -11,18 +11,10 @@ angular.module('hearthApp').controller('frozenThroneCtrl', function($scope, hear
     var set = data.data["Knights of the Frozen Throne"]
     console.log(set)
     for(var i = 0; i<set.length; i++){
-         if(set[i].imgGold===undefined){
-             set.splice(i,1)
-         }
-         if(set[i].img== undefined){
-             set.splice(i,1)
-         }
-         if(set[i].Enchantment!=undefined){
-             set.splice(i,1)
-         }
+         
          if(set[i].cost===undefined){
-             set.splice(i,1)
-         }
+            set.splice(i,1)
+            i = i-1
         
  
      }console.log(set)
