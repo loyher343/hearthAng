@@ -14,7 +14,7 @@ angular.module('hearthApp').controller('frozenThroneCtrl', function($scope, hear
          
          if(set[i].cost===undefined){
             set.splice(i,1)
-            i = i-1
+            i = i-1}
         
  
      }console.log(set)
